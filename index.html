@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <section class="session-future">
+            <div class= "third">
+                <span class="start-time">12:51</span>
+                <span class="duration"> 2:20:32</span>
+                <span class="end-time">15:11</span>
+                <span class="identity">FOCUS</span>
+            </div>
+            <div class="second">
+                <span class="start-time">12:51</span>
+                <span class="duration"> 2:20:32</span>
+                <span class="end-time">15:11</span>
+                <span class="identity">FOCUS</span>
+            </div>
+            <div class="first">
+                <span class="start-time">12:51</span>
+                <span class="duration"> 2:20:32</span>
+                <span class="end-time">15:11</span>
+                <span class="identity">FOCUS</span>
+            </div>
+        </section>
+        <section class="main-timer">
+            <div class="timer">...</div>
+            <button class="Prev" onclick="timeLineUpdator(-1)">Prev</button>
+            <button class="starter">Start</button>
+            <button class="Next" onclick="timeLineUpdator(1)">Next</button>
+        </section>
+        <section class="session-history">
+            <div class= "first">
+                <span class="start-time">12:51</span>
+                <span class="duration"> 2:20:32</span>
+                <span class="end-time">15:11</span>
+                <span class="identity">FOCUS</span>
+            </div>
+            <div class="second">
+                <span class="start-time">12:51</span>
+                <span class="duration"> 2:20:32</span>
+                <span class="end-time">15:11</span>
+                <span class="identity">FOCUS</span>
+            </div>
+            <div class= "third">
+                <span class="start-time">12:51</span>
+                <span class="duration"> 2:20:32</span>
+                <span class="end-time">15:11</span>
+                <span class="identity">FOCUS</span>
+            </div>
+        </section>
+
+        <div class="plans">
+            <span class="inactive" onclick="planChange(0)">Custom
+              <span onclick="openCustomMenu()">Customize Timer</span>
+            </span>
+            <span class="active" onclick="planChange(1)">Pomodoro</span>
+        </div>
+        <div class="customMenu">
+         <h2>Custom Timer</h2> 
+
+         <span>Rounds </span>=<span id="Rounds"contenteditable="true">2</span><br>
+         <span>Sessions </span>=<span id="Sessions"contenteditable="true">2</span><br>
+         <span>Short Breaks  </span>=<span id="shortBreakhour" contenteditable="true">0</span>:<span id="shortBreakmin" contenteditable="true">5</span>:<span id="shortBreaksec" contenteditable="true">0</span><br>
+         <span>Long Breaks  </span>=<span id="longBreakhour" contenteditable="true">0</span>:<span id="longBreakmin" contenteditable="true">15</span>:<span id="longBreaksec" contenteditable="true">0</span><br>
+         <span>Length </span>=<span id="Lengthhour" contenteditable="true">0</span>:<span id="Lengthmin" contenteditable="true">45</span>:<span id="Lengthsec" contenteditable="true">0</span><br>
+
+         <button onclick="openCustomMenu()">Okay</button>
+        </div>
+    </body>
+    <script src="js/scripts.js"></script>
+</html>
