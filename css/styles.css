@@ -18,49 +18,57 @@ button {
   background-color: #181825; }
 
 body {
-  background-color: #1e1e2e;
+  background-color: #00000b;
   color: #cdd6f4; }
 
 section {
   margin: auto;
-  width: 90vh; }
+  width: 90vw; }
 
 section.main-timer {
   text-align: center;
+  margin: auto;
   margin-top: 2vh;
   background-color: #11111b;
   padding: 2vh;
-  border-radius: 10px;
-  box-shadow: #00000b 2px 2px 10px 0px;
+  border-radius: 50px;
   color: #cdd6f4;
   font-size: 3vh; }
-  section.main-timer div.timer {
-    font-size: 12vh; }
-  section.main-timer button.starter {
-    background-color: #1e1e2e;
-    border: 4px solid transparent;
-    transition: 0.3s ease;
-    font-size: 1.5vh; }
-  section.main-timer button.starter:hover {
-    background: #11111b;
-    border: 4px solid #cdd6f4; }
-  section.main-timer button.inactive {
-    border: 4px solid #181825;
-    background: transparent; }
-  section.main-timer button.inactive:hover {
-    background: #181825;
-    border: 4px solid transparent; }
-  section.main-timer button.Prev {
-    opacity: 0;
-    z-index: -1;
-    transform: translate(100%);
-    transition: 0.2s ease;
-    pointer-events: none; }
-  section.main-timer button.Next {
-    opacity: 0;
-    z-index: -1;
-    transform: translate(-100%);
-    transition: 0.2s ease; }
+
+section.main-timer div.timer {
+  font-size: 10vh; }
+
+section.main-timer button.starter {
+  background-color: #1e1e2e;
+  border: 4px solid transparent;
+  transition: 0.3s ease;
+  font-size: 1.5vh; }
+
+section.main-timer button.starter:hover {
+  background: #11111b;
+  border: 4px solid #cdd6f4; }
+
+section.main-timer button.inactive {
+  border: 4px solid #181825;
+  background: transparent; }
+
+section.main-timer button.inactive:hover {
+  background: #181825;
+  border: 4px solid transparent; }
+
+section.main-timer button.Prev {
+  opacity: 0;
+  z-index: -1;
+  transform: translate(100%);
+  transition: 0.2s ease;
+  pointer-events: none; }
+
+section.main-timer button.Next {
+  opacity: 0;
+  z-index: -1;
+  transform: translate(-100%);
+  transition: 0.2s ease;
+  pointer-events: none; }
 
 section.session-history div,
 section.session-future div {
@@ -69,44 +77,52 @@ section.session-future div {
   text-align: center;
   background-color: #11111b;
   padding: 2vh;
-  border-radius: 10px;
+  border-radius: 50px;
   color: #313244;
   font-size: 2vh;
   box-shadow: #00000b 2px 2px 10px 0px; }
-  section.session-history div span.duration,
-  section.session-future div span.duration {
-    color: #cdd6f4;
-    font-size: 3vh; }
-  section.session-history div span.identity,
-  section.session-future div span.identity {
-    font-size: 1.5vh;
-    color: #cba6f7;
-    border-radius: 5px;
-    border: 1px solid;
-    padding: 5px; }
-  section.session-history div.first,
-  section.session-future div.first {
-    width: 80vh; }
-  section.session-history div.second,
-  section.session-future div.second {
-    width: 70vh;
-    font-size: 1.5vh; }
-    section.session-history div.second span.duration,
-    section.session-future div.second span.duration {
-      font-size: 2.5vh; }
-    section.session-history div.second::after,
-    section.session-future div.second::after {
-      font-size: 1.25vh; }
-  section.session-history div.third,
-  section.session-future div.third {
-    width: 60vh;
-    font-size: 1vh; }
-    section.session-history div.third span.duration,
-    section.session-future div.third span.duration {
-      font-size: 2vh; }
-    section.session-history div.third::after,
-    section.session-future div.third::after {
-      font-size: 0.75vh; }
+
+section.session-history div span.duration,
+section.session-future div span.duration {
+  color: #cdd6f4;
+  font-size: 3vh; }
+
+section.session-history div span.identity,
+section.session-future div span.identity {
+  font-size: 1.5vh;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 5px; }
+
+section.session-history div.first,
+section.session-future div.first {
+  width: 80vw; }
+
+section.session-history div.second,
+section.session-future div.second {
+  width: 70vw;
+  font-size: 1.5vh; }
+
+section.session-history div.second span.duration,
+section.session-future div.second span.duration {
+  font-size: 2.5vh; }
+
+section.session-history div.second::after,
+section.session-future div.second::after {
+  font-size: 1.25vh; }
+
+section.session-history div.third,
+section.session-future div.third {
+  width: 60vw;
+  font-size: 1vh; }
+
+section.session-history div.third span.duration,
+section.session-future div.third span.duration {
+  font-size: 2vh; }
+
+section.session-history div.third::after,
+section.session-future div.third::after {
+  font-size: 0.75vh; }
 
 div.customMenu {
   display: none;
@@ -114,31 +130,35 @@ div.customMenu {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50vw;
+  width: 50vh;
+  aspect-ratio: 1;
   background-color: #11111b;
   margin: auto;
   margin-top: 2vh;
-  padding: 2vw;
+  padding: 2vh;
   border-radius: 10px;
   border: 3px solid #cba6f7;
   box-shadow: #00000b 0px 0px 20px 3px; }
-  div.customMenu span {
-    display: inline-block;
-    background-color: #181825;
-    border-radius: 10px;
-    padding: 1vw;
-    margin: 1vw; }
-  div.customMenu button {
-    display: block;
-    cursor: pointer;
-    background-color: #181825;
-    border-radius: 20px;
-    transition: 0.1s ease;
-    padding: 2vw;
-    margin: auto; }
-    div.customMenu button:hover {
-      color: #181825;
-      background: #cdd6f4; }
+
+div.customMenu span {
+  display: inline-block;
+  background-color: #181825;
+  border-radius: 10px;
+  padding: 1vh;
+  margin: 1vh; }
+
+div.customMenu button {
+  display: block;
+  cursor: pointer;
+  background-color: #181825;
+  border-radius: 20px;
+  transition: 0.1s ease;
+  padding: 2vh;
+  margin: auto; }
+
+div.customMenu button:hover {
+  color: #181825;
+  background: #cdd6f4; }
 
 div.plans {
   bottom: 0;
@@ -148,29 +168,35 @@ div.plans {
   text-align: center;
   width: 40vh;
   margin-top: 5vh;
-  border-radius: 20vh;
+  border-radius: 20vh 20vh 0 0;
   background-color: #181825;
   padding: 3vh; }
-  div.plans span {
-    cursor: pointer;
-    padding: 2vh;
-    border-radius: 10px;
-    transition: 0.5s ease; }
-    div.plans span.active {
-      background-color: #11111b; }
-    div.plans span:hover {
-      background-color: #11111b; }
-    div.plans span:nth-child(1) span {
-      display: none;
-      position: fixed;
-      top: -50%;
-      left: 25%;
-      padding: 2vh;
-      background: #cba6f7;
-      color: #1e1e2e;
-      transition: 0.1s ease; }
-      div.plans span:nth-child(1) span:hover {
-        background: #181825;
-        color: #cba6f7; }
-    div.plans span:nth-child(1).active:hover span {
-      display: block; }
+
+div.plans span {
+  cursor: pointer;
+  padding: 2vh;
+  border-radius: 10px;
+  transition: 0.5s ease; }
+
+div.plans span.active {
+  background-color: #11111b; }
+
+div.plans span:hover {
+  background-color: #11111b; }
+
+div.plans span:nth-child(1) span {
+  display: none;
+  position: fixed;
+  top: -50%;
+  left: 25%;
+  padding: 2vh;
+  background: #cba6f7;
+  color: #1e1e2e;
+  transition: 0.1s ease; }
+
+div.plans span:nth-child(1) span:hover {
+  background: #181825;
+  color: #cba6f7; }
+
+div.plans span:nth-child(1).active:hover span {
+  display: block; }
